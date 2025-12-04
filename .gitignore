@@ -1,0 +1,46 @@
+# ========================================
+# VideoToText.Pro — .gitignore
+# ========================================
+
+# User folders (never commit personal videos or results)
+video/
+output/
+
+# Temporary audio files extracted during processing
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.wma
+
+# Temp config created by the .bat menu
+config_temp.py
+
+# Whisper model cache & downloaded models (huge files)
+__pycache__/
+.cache/
+models/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# Python cache
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Optional: ignore large video files just in case
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
+*.wmv
+*.m4v
+*.mpg
+*.mpeg

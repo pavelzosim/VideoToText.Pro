@@ -1,0 +1,58 @@
+# ================================================================
+# VIDEO TO TEXT TRANSCRIPTION - DEPENDENCIES
+# ================================================================
+
+# Core dependencies
+torch>=2.0.0
+faster-whisper>=0.10.0
+tqdm>=4.65.0
+
+# Optional: For CUDA GPU support (Windows)
+# Install separately from: https://pytorch.org/get-started/locally/
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# ================================================================
+# INSTALLATION INSTRUCTIONS
+# ================================================================
+
+# 1. Install Python 3.8 or higher from https://www.python.org/downloads/
+#    ✅ IMPORTANT: Check "Add Python to PATH" during installation!
+
+# 2. Install FFmpeg (required for audio extraction):
+#    - Download from: https://www.gyan.dev/ffmpeg/builds/
+#    - Extract and add to PATH, OR place ffmpeg.exe in this folder
+
+# 3. Install Python dependencies:
+#    Open terminal in this folder and run:
+#    pip install -r requirements.txt
+
+# 4. (Optional) For GPU acceleration:
+#    - Install NVIDIA CUDA Toolkit 11.8
+#    - Install PyTorch with CUDA:
+#      pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# ================================================================
+# USAGE
+# ================================================================
+
+# METHOD 1: Using batch file (recommended)
+# - Double-click: run_transcription.bat
+# - Select model and settings from menu
+# - Press [R] to run
+
+# METHOD 2: Direct Python execution
+# - Edit settings in generate_transcripts.py
+# - Run: python generate_transcripts.py
+
+# ================================================================
+# FOLDER STRUCTURE
+# ================================================================
+
+# audio_to_txt/
+# ├── generate_transcripts.py    # Main script
+# ├── run_transcription.bat      # Menu launcher
+# ├── requirements.txt           # This file
+# ├── video/                     # Put your video files here
+# └── output/                    # Transcriptions will be saved here
+
+# ================================================================
