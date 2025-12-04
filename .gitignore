@@ -3,8 +3,10 @@
 # ========================================
 
 # User folders (never commit personal videos or results)
-video/
-output/
+video/*
+output/*
+!video/.gitkeep
+!output/.gitkeep
 
 # Temporary audio files extracted during processing
 *.wav
